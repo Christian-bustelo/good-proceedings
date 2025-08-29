@@ -1,0 +1,10 @@
+version: 1
+extends: ../slides.yml
+project:
+  title: A GOOD Ending
+  authors:
+    - name: Alan Chalker
+      affiliation: Ohio Supercomputer Center
+      orcid: 0000-0002-5475-8779
+  abstract: |
+    The closing presentation to the GOOD25 conference.
