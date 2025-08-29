@@ -1,0 +1,14 @@
+version: 1
+extends: ../slides.yml
+project:
+  title: gpuavail Passenger App
+  authors:
+    - name: Michael Dickens
+      affiliation: Texas A&M University
+      orcid: 0000-0001-9203-1688
+  abstract: |
+    An up-to-the-minute status report of the configuration and availability of HPC resources can be useful
+    for selecting resource parameters in interactive apps. GPU node resources can be low at times leaving
+    few or no GPUs available for immediate use when launching interactive apps. By providing the status
+    of readily available GPU node resources such as the type and number of GPUs, CPU cores and GB of memory,
+    users can more efficiently utilize cluster resources and minimize job queue wait times.
