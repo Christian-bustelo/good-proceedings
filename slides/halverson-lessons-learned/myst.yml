@@ -1,0 +1,19 @@
+version: 1
+extends: ../slides.yml
+project:
+  title: Lessons Learned from 8 Years of Open OnDemand at Princeton Research Computing
+  authors:
+    - name: Josko Plazonic
+      affiliation: Princeton University
+      orcid: 0009-0000-6648-3568
+    - name: Jonathan Halverson
+      affiliation: Princeton University
+      orcid: 0009-0000-4877-3836
+    - name: Irene Kopaliani
+      affiliation: Princeton University
+      orcid: 0000-0003-3263-0712
+  abstract: |
+    Adopting a new software platform that has the power to change the way teaching and research is done
+    is rarely easy. In this talk, we explain how Princeton University Research Computing started with Open
+    OnDemand (OOD), what we contributed, and what we learned. Hear about our problems, solutions and
+    continued pain points.
