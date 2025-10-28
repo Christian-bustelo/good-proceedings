@@ -41,6 +41,5 @@ project:
     - rule: doi-exists
       severity: ignore
       keys:
-        - redmexsu2023
-        - scalac2023
-        - uson2023
+        - Strohmaier
+        - mxs

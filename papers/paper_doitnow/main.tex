@@ -11,7 +11,6 @@
 
 
 \title{OOD meets EESSI: Accessing and Distributing Scientific Software with Ease}
-\author{Christian Bustelo, Arturo Gimeno, Erica Bianco}
 \date{GOOD Conference 2025}
 
 \begin{document}
@@ -30,18 +29,18 @@ In the High Performance Computing (HPC) space, there is a push to improve access
 Computational science and engineering have experienced a notorious growth in software complexity and computational requirements over the past decade. From biophysics and aerospace simulations to artificial intelligence workflows, the scientific community is using scientific software on HPC, and the software performance plays a key role.
 Despite the usage and complexity growth, using HPC from the scientific community still has significant limitations. These include the scarcity of specialized HPC support teams personnel, the diversity of hardware architectures, and the fast release pace for new applications. 
 
-On top of this, maintaining an optimized scientific software appstack has two  main levels of complexity. On the one hand, the HPC systems are no longer homogeneous and have increased hardware diversity\cite{Strohmaier}. Architectures such as AMD Zen, Arm (Neoverse, A64FX, Graviton), and even RISC-V are entering production, accompanied by their new vector extensions, cache configurations, and execution back-ends. 
-On the other hand, the variety of specialized scientific application software is increasing at a very fast pace (30k only at \cite{Ison2019}). Many of them have strict build requirements, specific dependency versions, and environment configurations that can vary significantly depending on the CPU architecture, making it difficult to reproduce the installation \cite{Taschuk2017}.
+On top of this, maintaining an optimized scientific software appstack has two  main levels of complexity. On the one hand, the HPC systems are no longer homogeneous and have increased hardware diversity \citep{Strohmaier}. Architectures such as AMD Zen, Arm (Neoverse, A64FX, Graviton), and even RISC-V are entering production, accompanied by their new vector extensions, cache configurations, and execution back-ends. 
+On the other hand, the variety of specialized scientific application software is increasing at a very fast pace (30k only at \cite{Ison2019}). Many of them have strict build requirements, specific dependency versions, and environment configurations that can vary significantly depending on the CPU architecture, making it difficult to reproduce the installation \citep{Taschuk2017}.
 
-In addition, researchers and developers have diversified the infrastructure on which they run their workloads: HPC, workstations, virtual environments, containers, and cloud services. This introduces additional requirements for portability, compatibility with multiple Linux distributions, and consistency across the different environments \cite{Droge2023,OCais2025,Bhattacharya2022}. 
+In addition, researchers and developers have diversified the infrastructure on which they run their workloads: HPC, workstations, virtual environments, containers, and cloud services. This introduces additional requirements for portability, compatibility with multiple Linux distributions, and consistency across the different environments \citep{Droge2023,OCais2025,Bhattacharya2022}. 
 
-Together, the heterogeneity of HPC systems and the differentiation of infrastructures make it suboptimal, if not impossible, to individually install and maintain multiple optimized versions of the same software for each system or architecture.  This practice consumes a significant amount of time, thus increasing operating costs and introducing inconsistencies that compromise the reproducibility of scientific workloads\cite{Taschuk2017}.
+Together, the heterogeneity of HPC systems and the differentiation of infrastructures make it suboptimal, if not impossible, to individually install and maintain multiple optimized versions of the same software for each system or architecture.  This practice consumes a significant amount of time, thus increasing operating costs and introducing inconsistencies that compromise the reproducibility of scientific workloads \citep{Taschuk2017}.
 
-One possible solution to this issue is EESSI \cite{Droge2023}, the European Environment for Scientific Software Installations. EESSI was developed under \textbf{MultiXcale Centre-of-Excellence} \cite{mxs}, a 4-year European project with the idea of being a step forward over the traditional approach of “installation recipes” (such as EasyConfigs in EasyBuild \cite{Hoste2012} or Spack \cite{Gamblin2015} packages) with real binaries, already optimized and packaged, distributed through a scalable infrastructure and accessible through a module loading system.
+One possible solution to this issue is EESSI \citep{Droge2023}, the European Environment for Scientific Software Installations. EESSI was developed under \textbf{MultiXcale Centre-of-Excellence} \citep{mxs}, a 4-year European project with the idea of being a step forward over the traditional approach of “installation recipes” (such as EasyConfigs in EasyBuild \cite[{Hoste2012} or Spack \citep{Gamblin2015} packages) with real binaries, already optimized and packaged, distributed through a scalable infrastructure and accessible through a module loading system.
 
-On the other side of the terminal, there are the end-users, who need to use the resources and the scientific applications to run their workflows. The use of HPC clusters has traditionally been associated with the domain of complex command-line tools, editors such as \texttt{vim} or \texttt{nano}, queue managers such as \texttt{Slurm} or \texttt{PBS}, and environment modules that lack of user friendly configuration structures. Although this approach is natural for Unix-savvy users, it represents a significant entry barrier for researchers, students, or professionals from other disciplines. This entry barrier makes it difficult for end users to access the HPC and HPC-like environment \cite{Chalker2024}, increasing the load on HPC support teams.
+On the other side of the terminal, there are the end-users, who need to use the resources and the scientific applications to run their workflows. The use of HPC clusters has traditionally been associated with the domain of complex command-line tools, editors such as \texttt{vim} or \texttt{nano}, queue managers such as \texttt{Slurm} or \texttt{PBS}, and environment modules that lack of user friendly configuration structures. Although this approach is natural for Unix-savvy users, it represents a significant entry barrier for researchers, students, or professionals from other disciplines. This entry barrier makes it difficult for end users to access the HPC and HPC-like environment \citep{Chalker2024}, increasing the load on HPC support teams.
 
-To lower the entry barrier to the HPC environment a possible solution is Open OnDemand (OOD), a web access platform developed by Ohio Supercomputer Center (OSC) which provides a modern, intuitive, and extensible graphical interface to make it easier to work with HPC resources \cite{Chalker2024}. OOD has been adopted by numerous supercomputing centers around the world as a solution to reduce access complexity and promote efficient use of available infrastructure.
+To lower the entry barrier to the HPC environment a possible solution is Open OnDemand (OOD), a web access platform developed by Ohio Supercomputer Center (OSC) which provides a modern, intuitive, and extensible graphical interface to make it easier to work with HPC resources \citep{Chalker2024}. OOD has been adopted by numerous supercomputing centers around the world as a solution to reduce access complexity and promote efficient use of available infrastructure.
 
 \section{Integrating EESSI with Open OnDemand}
 
@@ -220,6 +219,5 @@ The authors would like to acknowledge the EESSI  and OOD communities who have co
 \printbibliography
 
 
-\end{document}
 
 \end{document}
