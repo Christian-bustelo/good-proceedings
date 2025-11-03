@@ -18,12 +18,13 @@ project:
   authors:
     - name: Christian Bustelo Yañez
       email: christian.bustelo@doitnowgroup.com
-      
+      affiliations: DIN
     - name: Arturo Gimeno González
       email: arturo.gimeno@doitnowgroup.com
-
+      affiliations: DIN
     - name: Erica Bianco
       email: erica.bianco@doitnowgroup.com
+      affiliations: DIN
   affiliations:
     - id: DIN
       institution: DoItNow
