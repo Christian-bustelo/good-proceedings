@@ -1,0 +1,44 @@
+version: 1
+extends: ../papers.yml
+project:
+  # Update this to match `good-2025-<folder>` the folder should be `<firstname_surname>`
+  id: good-2025-heras
+  # Ensure your title is the same as in your `main.md`
+  title: 'Bridging the gap: simplifying HPC access for data science users at Universidad de Sonora with Open OnDemand'
+  # subtitle:
+  description: |
+    The University of Sonora has successfully integrated Open OnDemand to address the increasing demand for high-performance
+    computing resources among researchers and students. By providing an intuitive web-based interface, Open OnDemand has 
+    empowered non-specialized users to harness advanced computational resources, facilitating significant progress in data-driven
+    research and interdisciplinary collaboration.
+  # Authors should have affiliations, emails and ORCIDs if available
+  authors:
+    - name: María del Carmen Heras Sánchez
+      email: carmen.heras@unison.mx
+      affiliations:
+        - Área de Cómputo de Alto Rendimiento, Departamento de Matemáticas, Universidad de Sonora, Hermosillo, Sonora, México.
+    - name: Raúl Gilberto Hazas Izquierdo
+      email: raul.hazas@unison.mx
+      affiliations:
+        - Departamento de Investigación en Física, Universidad de Sonora, Hermosillo, Sonora, México.
+  keywords:
+    - HPC
+    - Data Science
+    - Open OnDemand
+    - ACARUS
+  # Add the abbreviations that you use in your paper here
+  abbreviations:
+    MyST: Markedly Structured Text
+    UNISON: Universidad de Sonora
+    ACARUS: UNISON High Performance Computing Area
+    HPC: High Performance Computing
+    RedMexSu: Mexican Supercomputing Network
+    SCALAC: Advanced Computing System for Latin America and the Caribbean
+  # It is possible to explicitly ignore the `doi-exists` check for certain citation keys
+  error_rules:
+    - rule: doi-exists
+      severity: ignore
+      keys:
+        - redmexsu2023
+        - scalac2023
+        - uson2023
