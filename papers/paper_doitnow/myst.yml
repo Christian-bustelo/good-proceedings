@@ -24,7 +24,16 @@ project:
 
     - name: Erica Bianco
       email: erica.bianco@doitnowgroup.com
-     
+  affiliations:
+    - id: DIN
+      institution: DoItNow
+      department: R&D Department
+      address: Av. Meridiana, 358 - 08027 Barcelona, Spain
+      city: Barcelona
+      region: Catalonia
+      country: Spain
+      postal_code: 08027
+      phone: +34 93 1640488
   keywords:
     - HPC
     - EESSI
